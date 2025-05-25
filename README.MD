@@ -2,20 +2,15 @@
 
 Java
 Spring Boot
-PostgreSQL
+MySQL
 
 # API RESTful para gestión de usuarios con roles y permisos, desarrollada con Spring Boot y PostgreSQL.
 
 📋 Características Principales
+
 ✅ CRUD completo de usuarios
 
 🛡️ Sistema de roles y permisos
-
-🔒 Autenticación JWT (próximamente)
-
-📊 Consultas personalizadas
-
-🧩 Validación de datos
 
 # Tecnologías Utilizadas Backend: 🛠️
 
@@ -29,7 +24,7 @@ Spring Validation
 
 Base de Datos:
 
-PostgreSQL 15
+MySQL
 
 H2 para testing
 
