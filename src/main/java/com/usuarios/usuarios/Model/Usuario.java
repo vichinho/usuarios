@@ -16,6 +16,8 @@ public class Usuario {
     private String rut;
     private String email;
     private String direccion;
+    @Column(name = "activo", nullable = false)
+    private Boolean activo = true;
 
     @ManyToOne
     @JoinColumn(name = "rol_id", nullable = true)

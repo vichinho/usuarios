@@ -90,4 +90,20 @@ public Usuario actualizarUsuario(Long id, Usuario usuarioActualizado) {
             })
             .orElseThrow(() -> new RuntimeException("Usuario no encontrado con ID: " + id));
 }
+@Override
+@Transactional
+public void desactivarUsuario(Long id) {
+    Usuario usuario = usuarioRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
+    usuario.setActivo(false);
+    // No necesitamos save() porque @Transactional actualiza automáticamente
+}
+
+@Override
+@Transactional
+public void activarUsuario(Long id) {
+    Usuario usuario = usuarioRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
+    usuario.setActivo(true);
+}
 }

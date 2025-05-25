@@ -58,5 +58,15 @@ public ResponseEntity<Usuario> actualizarUsuario(
     Usuario usuario = usuarioService.actualizarUsuario(usuarioId, usuarioActualizado);
     return ResponseEntity.ok(usuario);
 }
+@PatchMapping("/{id}/desactivar")
+public ResponseEntity<Void> desactivarUsuario(@PathVariable Long id) {
+    usuarioService.desactivarUsuario(id);
+    return ResponseEntity.noContent().build(); // HTTP 204
+}
 
+@PatchMapping("/{id}/activar")
+public ResponseEntity<Void> activarUsuario(@PathVariable Long id) {
+    usuarioService.activarUsuario(id);
+    return ResponseEntity.noContent().build();
+}
 }

@@ -11,4 +11,6 @@ public interface UsuarioService {
     Usuario asignarRol(Long usuarioId, Long rolId);
     void quitarRol(Long usuarioId);
     Usuario actualizarUsuario(Long id, Usuario usuarioActualizado);
+    void desactivarUsuario(Long id);
+    void activarUsuario(Long id);
 }
