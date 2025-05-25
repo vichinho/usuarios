@@ -1,9 +1,10 @@
-📝 Sistema de Gestión de Usuarios - Spring Boot API
+# Sistema de Gestión de Usuarios - Spring Boot API 📝
+
 Java
 Spring Boot
 PostgreSQL
 
-API RESTful para gestión de usuarios con roles y permisos, desarrollada con Spring Boot y PostgreSQL.
+# API RESTful para gestión de usuarios con roles y permisos, desarrollada con Spring Boot y PostgreSQL.
 
 📋 Características Principales
 ✅ CRUD completo de usuarios
@@ -16,8 +17,7 @@ API RESTful para gestión de usuarios con roles y permisos, desarrollada con Spr
 
 🧩 Validación de datos
 
-🛠️ Tecnologías Utilizadas
-Backend:
+# Tecnologías Utilizadas Backend: 🛠️
 
 Java 17
 
@@ -41,8 +41,7 @@ Lombok
 
 MapStruct (próximamente)
 
-🚀 Instalación y Configuración
-Clonar el repositorio:
+# Instalación y Configuración Clonar el repositorio 🚀:
 
 bash
 git clone https://github.com/vichinho/usuarios.git
