@@ -25,13 +25,13 @@ public class UsuarioServiceImpl implements UsuarioService {
     }
 
     @Override
-    @Transactional(readOnly = true)
+    @Transactional
     public List<Usuario> obtenerTodosUsuarios() {
         return usuarioRepository.findAll();
     }
 
     @Override
-    @Transactional(readOnly = true)
+    @Transactional
     public Usuario obtenerUsuarioPorId(Long id) {
         return usuarioRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Usuario no encontrado con ID: " + id));

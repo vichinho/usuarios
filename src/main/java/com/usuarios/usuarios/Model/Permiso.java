@@ -13,6 +13,5 @@ public class Permiso {
     
     @Column(unique = true, nullable = false)
     private String nombre;
-    
     private String descripcion;
 }
