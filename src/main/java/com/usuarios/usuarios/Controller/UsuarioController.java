@@ -48,9 +48,9 @@ public ResponseEntity<Usuario> asignarRol(
 @DeleteMapping("/{usuarioId}/quitar-rol")
 public ResponseEntity<Void> quitarRol(@PathVariable Long usuarioId) {
     usuarioService.quitarRol(usuarioId);
-    return ResponseEntity.noContent().build(); // HTTP 204
+    return ResponseEntity.noContent().build();
 }
-@PutMapping("/actualizar/{usuarioId}")  // Asegúrate de que coincida con la ruta base "/api/usuarios"
+@PutMapping("/actualizar/{usuarioId}")  
 public ResponseEntity<Usuario> actualizarUsuario(
         @PathVariable Long usuarioId,
         @Validated @RequestBody Usuario usuarioActualizado) {
@@ -61,7 +61,7 @@ public ResponseEntity<Usuario> actualizarUsuario(
 @PatchMapping("/{id}/desactivar")
 public ResponseEntity<Void> desactivarUsuario(@PathVariable Long id) {
     usuarioService.desactivarUsuario(id);
-    return ResponseEntity.noContent().build(); // HTTP 204
+    return ResponseEntity.noContent().build();
 }
 
 @PatchMapping("/{id}/activar")

@@ -5,12 +5,10 @@ import com.usuarios.usuarios.Repository.RolRepository;
 import org.springframework.stereotype.Service;
 import jakarta.transaction.Transactional;
 
-@Service // ¡Esta anotación es crucial!
+@Service
 public class RolServiceImpl implements RolService {
 
     private final RolRepository rolRepository;
-
-    // Inyección por constructor (recomendado)
     public RolServiceImpl(RolRepository rolRepository) {
         this.rolRepository = rolRepository;
     }

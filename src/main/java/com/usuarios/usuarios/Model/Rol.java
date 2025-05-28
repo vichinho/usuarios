@@ -15,7 +15,7 @@ public class Rol {
     
     @Column(unique = true)
     private String nombre;
-    private String descripcion; // Asegúrate de tener este campo
+    private String descripcion;
     
     @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(

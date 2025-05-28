@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/permisos")  // Asegúrate de que coincida con la URL que usas en Postman
+@RequestMapping("/api/permisos")
 public class PermisoController {
 
     @Autowired
